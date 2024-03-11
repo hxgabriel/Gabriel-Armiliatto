@@ -9,7 +9,12 @@
 </head>
 <body>
      <?php
-     $hipt = $_GET['hip']['cat1']['cat2'];
+$cat01 = (cat1);
+$cat02 = (cat2);
+
+$hipotenusa = hypot($catetoOposto, $catetoAdjacente);
+
+echo "A hipotenusa é: " . $hipotenusa;
      hip (float $x, float $y): float
      ?>
 </body>
