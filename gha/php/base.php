@@ -9,15 +9,13 @@
 </head>
 <body>
      <?php
-     $nome = "Eduardo";
-     const SOBRENOME = " Grando";
-     echo "meu nome eh $nome" . SOBRENOME . "\u{1F9F8} <br>";
-     $peso = 68;
-     $idade = 17;
-     $altura = 1.87;
-     echo "meu peso eh $peso", "<br>";
-     echo "minha altura eh $altura", "<br>";
-     echo "minha idade eh $idade", "<br>";
+$decimal = "255";
+$hexadecimal = base_convert($decimal, 10, 16);
+echo "Decimal para Hexadecimal: " . $hexadecimal . "\n";
+
+$hexadecimal = "ff";
+$decimal = base_convert($hexadecimal, 16, 10);
+echo "Hexadecimal para Decimal: " . $decimal . "\n";
      ?>
 </body>
    </html> 
