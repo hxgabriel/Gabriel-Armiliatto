@@ -9,12 +9,13 @@
 </head>
 <body>
      <?php
-$cat01 = (cat1);
-$cat02 = (cat2);
+
+$cat01 = $_GET['cat1'];
+$cat02 = $_GET['cat2'];
 
 $hipotenusa = hypot($cat01, $cat02);
 
-echo "A hipotenusa é: " . $hipotenusa;
+echo "A hipotenusa é:", $hipotenusa;
      ?>
 </body>
    </html> 

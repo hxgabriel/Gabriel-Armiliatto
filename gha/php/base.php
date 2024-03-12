@@ -9,13 +9,11 @@
 </head>
 <body>
      <?php
-$decimal = "255";
-$hexadecimal = base_convert($decimal, 10, 16);
-echo "Decimal para Hexadecimal: " . $hexadecimal . "\n";
+$decimalt = $_GET['decimal'];
 
-$hexadecimal = "ff";
-$decimal = base_convert($hexadecimal, 16, 10);
-echo "Hexadecimal para Decimal: " . $decimal . "\n";
+$hexadecimalt = base_convert($decimalt, 10, 16);
+echo "Decimal para Hexadecimal:", $hexadecimalt;
+
      ?>
 </body>
    </html> 

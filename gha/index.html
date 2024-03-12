@@ -1,62 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Funções</title>
-    <link rel="stylesheet" href="">
-</head>
-<style>
-    body{
-        background-color: beige;
-        align-items: center;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    <link rel="stylesheet" href="" />
+  </head>
+  <style>
+    body {
+      background-color: beige;
+      align-items: center;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     }
-</style>
-<body>
+  </style>
+  <body>
     <h1>FUNÇÕES PHPS</h1>
     <main>
+      <div class="funcao1">
+        <form action="php/abs.php" method="get">
+          <fieldset>
+            <legend><b>Função ABS</b></legend>
+            <p>
+              Retorna o valor absoluto de um número. Esse valor é o número sem
+              seu sinal.
+            </p>
+            <label>Informe o valor para retornar o seu numero real.</label>
+            <input type="number" name="abs" id="idadejs" />
+            <br /><br />
+            <input type="submit" value="calcular" />
+          </fieldset>
+        </form>
+      </div>
 
-        <div class="funcao1">
-            <form action="php/abs.php" method="get">
-                <fieldset>
-                    <legend><b>Função ABS</b></legend>
-                    <p>Retorna o valor absoluto de um número. Esse valor é o número sem seu sinal.</p>
-                    <label>Informe o valor para retornar o seu numero real.</label>
-                    <input type="number" name="abs" id="idadejs">
-                    <br><br>
-                    <input type="submit" name="submit" id="submit">
-                </fieldset>
-        </div>
+      <div class="funcao2">
+        <form action="php/hip.php" method="get">
+          <fieldset>
+            <legend><b>Função Hipotenusa</b></legend>
+            <p>
+              O teorema de Pitágoras diz que o quadrado da hipotenusa é igual a
+              soma dos quadrados dos catetos a2 = b2 + c2 onde: a é hipotenusa,
+              b cateto1 e c cateto2
+            </p>
+            <label>Informe o Cateto 1</label>
+            <input type="number" name="cat1" id="valorcat1" />
+            <br /><br />
+            <label>Informe o Cateto 2</label>
+            <input type="number" name="cat2" id="valorcat2" />
+            <br /><br />
+            <input type="submit" value="calcular" />
+          </fieldset>
+        </form>
+      </div>
 
-        <p><a href="php/funcao2.php">base_convert</a></p>
+      <div class="funcao3">
+        <form action="php/base.php" method="get">
+          <fieldset>
+            <legend><b>Função Base_Convert</b></legend>
+            <p>
+              A função BASE converte um número decimal em uma representação de
+              texto em outra base. Por exemplo, base 2 para binário.
+            </p>
+            <label>Informe a base decimal</label>
+            <input type="number" name="decimal" id="valordec" />
+            <br /><br />
+            <input type="submit" value="calcular" />
+          </fieldset>
+        </form>
+      </div>
 
-        <div class="funcao3">
-            <form action="php/hip.php" method="get">
-                <fieldset>
-                    <legend><b>Função Hipotenusa</b></legend>
-                    <p>O teorema de Pitágoras diz que o quadrado da hipotenusa é igual a soma dos quadrados dos catetos
-                       a2 = b2 + c2 onde: a é hipotenusa, b cateto1 e c cateto2 </p>
-                    <label>Informe o Cateto 1</label>
-                    <input type="number" name="cat1" id="idadejs">
-                    <br><br>
-                    <label>Informe o Cateto 2</label>
-                    <input type="number" name="cat2" id="idadejs">
-                    <br><br>
-                    <input type="submit" name="submit" id="submit">
-                </fieldset>
-        </div>
-        <p><a href="php/funcao4.php">IntDiv</a></p>
-        <p><a href="php/funcao5.php">Min</a></p>
-        <p><a href="php/funcao6.php">Max</a></p>
-        <p><a href="php/funcao7.php">PI</a></p>
-        <p><a href="php/funcao8.php">Pow</a></p>
-        <p><a href="php/funcao9.php">Sin</a></p>
-        <p><a href="php/funcao10.php">Cos</a></p>
-        <p><a href="php/funcao11.php">Tan</a></p>
-        <p><a href="php/funcao12.php">SQRT</a></p>
+      <div class="funcao4">
+        <form action="php/intdiv.php" method="get">
+          <fieldset>
+            <legend><b>Função IntDiv</b></legend>
+            <p>
+              A função intdiv() no PHP é utilizada para realizar a divisão inteira 
+              entre dois números. Isso significa que ela divide um número (dividendo)
+              pelo outro (divisor) e retorna o quociente inteiro da divisão, 
+              descartando qualquer resto ou parte fracionária que possa resultar da operação.
+            </p>
+            <label>Informe um número</label>
+            <input type="number" name="numerodiv" id="valordiv" />
+            <br /><br />
+            <input type="submit" value="calcular" />
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="funcao5">
+        <form action="php/intdiv.php" method="get">
+          <fieldset>
+            <legend><b>Função IntDiv</b></legend>
+            <p>
+              Ao trabalhar com arrays multidimensionais, min() compara os primeiros elementos 
+              de cada sub-array. Para obter o valor mínimo mais profundamente em arrays 
+              multidimensionais, você pode precisar de abordagens adicionais, como loops 
+              ou outras funções de array.
+            </p>
+            <label>Informe um número</label>
+            <input type="number" name="numerodiv" id="valordiv" />
+            <br /><br />
+            <input type="submit" value="calcular" />
+          </fieldset>
+        </form>
+      </div>
+
+      <p><a href="php/funcao5.php">Min</a></p>
+      <p><a href="php/funcao6.php">Max</a></p>
+      <p><a href="php/funcao7.php">PI</a></p>
+      <p><a href="php/funcao8.php">Pow</a></p>
+      <p><a href="php/funcao9.php">Sin</a></p>
+      <p><a href="php/funcao10.php">Cos</a></p>
+      <p><a href="php/funcao11.php">Tan</a></p>
+      <p><a href="php/funcao12.php">SQRT</a></p>
     </main>
-</body>
-
+  </body>
 </html>

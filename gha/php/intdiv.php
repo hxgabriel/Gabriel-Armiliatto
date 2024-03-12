@@ -9,8 +9,10 @@
 </head>
 <body>
      <?php
-     $abst = $_GET['abs'];
-     echo abs($abst); 
+     $numerodivt = $_GET['numerodiv'];
+
+     $numerodivt = intdiv ($numerodivt, 3);
+     echo $numerodivt;
      ?>
 </body>
    </html> 
