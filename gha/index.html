@@ -4,15 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Funções</title>
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <style>
-    body {
-      background-color: beige;
-      align-items: center;
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    }
-  </style>
   <body>
     <h1>FUNÇÕES PHPS</h1>
     <main>
@@ -27,7 +20,7 @@
             <label>Informe o valor para retornar o seu numero real.</label>
             <input type="number" name="abs" id="idadejs" />
             <br /><br />
-            <input type="submit" value="calcular" />
+            <input type="submit" value="calcular" class="a" />
           </fieldset>
         </form>
       </div>
@@ -47,7 +40,7 @@
             <label>Informe o Cateto 2</label>
             <input type="number" name="cat2" id="valorcat2" />
             <br /><br />
-            <input type="submit" value="calcular" />
+            <input type="submit" value="calcular" class="a" />
           </fieldset>
         </form>
       </div>
@@ -63,7 +56,7 @@
             <label>Informe a base decimal</label>
             <input type="number" name="decimal" id="valordec" />
             <br /><br />
-            <input type="submit" value="calcular" />
+            <input type="submit" value="calcular" class="a" />
           </fieldset>
         </form>
       </div>
@@ -81,7 +74,7 @@
             <label>Informe um número</label>
             <input type="number" name="numerodiv" id="valordiv" />
             <br /><br />
-            <input type="submit" value="calcular" />
+            <input type="submit" value="calcular" class="a" />
           </fieldset>
         </form>
       </div>
@@ -104,7 +97,7 @@
             <br /><br />
             <input type="number" name="min3" id="valormin3" />
             <br /><br />
-            <input type="submit" value="calcular" />
+            <input type="submit" value="calcular" class="a" />
           </fieldset>
         </form>
       </div>
@@ -126,7 +119,7 @@
             <br /><br />
             <input type="number" name="max3" id="valormax3" />
             <br /><br />
-            <input type="submit" value="calcular" />
+            <input type="submit" value="calcular" class="a" />
           </fieldset>
         </form>
       </div>
@@ -146,7 +139,7 @@
             <br /><br />
             <input type="number" name="diampi" id="valordiampi" />
             <br /><br />
-            <input type="submit" value="calcular" />
+            <input type="submit" value="calcular" class="a" />
           </fieldset>
         </form>
       </div>
@@ -156,7 +149,9 @@
           <fieldset>
             <legend><b>Função Pow</b></legend>
             <p>
-            Retorna uma aproximação de pi. 
+              Calcula o valor de um número elevado a uma 
+              potência. pow() pode ser usada para transformar 
+              um número em uma potência fracionária. 
             </p>
             <label>Informe uma base</label>
             <br /><br />
@@ -166,7 +161,7 @@
             <br /><br />
             <input type="number" name="expoentepow" id="valordiampi" />
             <br /><br />
-            <input type="submit" value="calcular" />
+            <input type="submit" value="calcular" class="a" />
           </fieldset>
         </form>
       </div>
@@ -176,21 +171,72 @@
           <fieldset>
             <legend><b>Função Sin</b></legend>
             <p>
-            Retorna uma aproximação de pi. 
+            sin() retorna o seno do parâmetro num.
             </p>
             <label>Informe um angulo</label>
             <br /><br />
             <input type="number" name="angulosin" id="valorsin" />
             <br /><br />
-            <input type="submit" value="calcular" />
+            <input type="submit" value="calcular" class="a" />
           </fieldset>
         </form>
       </div>
 
-      <p><a href="php/funcao9.php">Sin</a></p>
-      <p><a href="php/funcao10.php">Cos</a></p>
-      <p><a href="php/funcao11.php">Tan</a></p>
-      <p><a href="php/funcao12.php">SQRT</a></p>
+      <div class="funcao10">
+        <form action="php/cos.php" method="get">
+          <fieldset>
+            <legend><b>Função Cos</b></legend>
+            <p>
+              cos() retorna o cosseno do parâmetro num.
+              O parâmetro num deve estar em radianos. 
+            </p>
+            <label>Informe um angulo</label>
+            <br /><br/>
+            <input type="number" name="angulocos" id="valorcos" />
+            <br /><br/>
+          <input type="submit" value="calcular" class="a" />
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="funcao11">
+        <form action="php/tan.php" method="get">
+          <fieldset>
+            <legend><b>Função Tan</b></legend>
+            <p>
+              tan() retorna a tangente do parâmetro num. 
+              O argumento num deve estar em radianos.  
+            </p>
+            <label>Informe um angulo</label>
+            <br /><br/>
+            <input type="number" name="angulotan" id="valortan" />
+            <br /><br/>
+          <input type="submit" value="calcular" class="a" />
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="funcao12">
+        <form action="php/sqrt.php" method="get">
+          <fieldset>
+            <legend><b>Função SQRT</b></legend>
+            <p>
+              A função sqrt() em PHP é usada para calcular a raiz
+              quadrada de um número. Em termos matemáticos, a raiz
+              quadrada de um número x é outro número y que, quando
+              multiplicado por si mesmo, resulta em x. 
+            </p>
+            <label>Informe um número</label>
+            <br /><br/>
+            <input type="number" name="numerosqrt" id="valorsqrt" />
+            <br /><br/>
+            <input type="submit" value="calcular" class="botao" />
+          </fieldset>
+        </form>
+      </div>
     </main>
+    <footer>
+      <h2>Gabriel Henrique Armiliatto Dias</h2>
+    </footer>
   </body>
 </html>

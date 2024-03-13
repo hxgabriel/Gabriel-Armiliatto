@@ -5,16 +5,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-widht, initia-sacale=1.0">
-    <title>Pow</title>
+    <title>Sin</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
      <?php
-     $base = $_GET['basepow'];
-     $expoente = $_GET['expoentepow'];
+     $numero = $_GET['numerosqrt'];
 
-     $resultado = pow($base, $expoente);
-     echo "$base elevado à potência $expoente é igual a $resultado<br>";
+     $raiz_quadrada = sqrt($numero);
+     echo "A raiz quadrada de $numero é igual a $raiz_quadrada";
      ?>
 </body>
    </html> 

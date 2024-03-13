@@ -5,16 +5,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-widht, initia-sacale=1.0">
-    <title>Pow</title>
+    <title>Sin</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
      <?php
-     $base = $_GET['basepow'];
-     $expoente = $_GET['expoentepow'];
+     $cosseno = $_GET['angulocos'];
+     $angulo_radiano = deg2rad($angulo);
 
-     $resultado = pow($base, $expoente);
-     echo "$base elevado à potência $expoente é igual a $resultado<br>";
+     $cosseno = cos($angulo_radiano);
+     echo "O cosseno de $angulo é aproximadamente igual a $cosseno<br>";
      ?>
 </body>
    </html> 
