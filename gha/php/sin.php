@@ -5,16 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-widht, initia-sacale=1.0">
-    <title>Mínima</title>
+    <title>Sin</title>
 </head>
 <body>
      <?php
-     $valor1 = $_GET['min1'];
-     $valor2 = $_GET['min2'];
-     $valor3 = $_GET['min3'];
+     $angulo = $_GET['angulosin'];
 
-     $minimo = min($valor1, $valor2, $valor3);
-     echo "O valor mínimo é: $minimo <br>";
+     $seno = sin($angulo);
+     echo "O seno de $angulo é aproximadamente igual a $seno<br>";
      ?>
 </body>
    </html> 

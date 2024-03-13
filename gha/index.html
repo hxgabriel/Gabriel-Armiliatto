@@ -87,27 +87,106 @@
       </div>
 
       <div class="funcao5">
-        <form action="php/intdiv.php" method="get">
+        <form action="php/min.php" method="get">
           <fieldset>
-            <legend><b>Função IntDiv</b></legend>
+            <legend><b>Função Min</b></legend>
             <p>
-              Ao trabalhar com arrays multidimensionais, min() compara os primeiros elementos 
-              de cada sub-array. Para obter o valor mínimo mais profundamente em arrays 
-              multidimensionais, você pode precisar de abordagens adicionais, como loops 
-              ou outras funções de array.
+              min() retorna o valor considerado o "menor" de acordo 
+              com as comparações padrão. Se valores de diferentes 
+              tipos forem avaliados como iguais (por exemplo 0 e 'abc')
+              então o primeiro valor fornecido à função será retornado. 
             </p>
-            <label>Informe um número</label>
-            <input type="number" name="numerodiv" id="valordiv" />
+            <label>Informe três números</label>
+            <br /><br />
+            <input type="number" name="min1" id="valormin1" />
+            <br /><br />
+            <input type="number" name="min2" id="valormin2" />
+            <br /><br />
+            <input type="number" name="min3" id="valormin3" />
             <br /><br />
             <input type="submit" value="calcular" />
           </fieldset>
         </form>
       </div>
 
-      <p><a href="php/funcao5.php">Min</a></p>
-      <p><a href="php/funcao6.php">Max</a></p>
-      <p><a href="php/funcao7.php">PI</a></p>
-      <p><a href="php/funcao8.php">Pow</a></p>
+      <div class="funcao6">
+        <form action="php/max.php" method="get">
+          <fieldset>
+            <legend><b>Função Max</b></legend>
+            <p>
+              Assim como a função min(), a função max()
+              é usada para encontrar o valor máximo em 
+              um conjunto de valores
+            </p>
+            <label>Informe três números</label>
+            <br /><br />
+            <input type="number" name="max1" id="valormax1" />
+            <br /><br />
+            <input type="number" name="max2" id="valormax2" />
+            <br /><br />
+            <input type="number" name="max3" id="valormax3" />
+            <br /><br />
+            <input type="submit" value="calcular" />
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="funcao7">
+        <form action="php/pi.php" method="get">
+          <fieldset>
+            <legend><b>Função Pi</b></legend>
+            <p>
+            Retorna uma aproximação de pi. 
+            </p>
+            <label>Informe um número de raio</label>
+            <br /><br />
+            <input type="number" name="raiopi" id="valorraiopi" />
+            <br /><br />
+            <label>Informe um número de diâmetro</label>
+            <br /><br />
+            <input type="number" name="diampi" id="valordiampi" />
+            <br /><br />
+            <input type="submit" value="calcular" />
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="funcao8">
+        <form action="php/pow.php" method="get">
+          <fieldset>
+            <legend><b>Função Pow</b></legend>
+            <p>
+            Retorna uma aproximação de pi. 
+            </p>
+            <label>Informe uma base</label>
+            <br /><br />
+            <input type="number" name="basepow" id="valorraiopi" />
+            <br /><br />
+            <label>Informe um expoente</label>
+            <br /><br />
+            <input type="number" name="expoentepow" id="valordiampi" />
+            <br /><br />
+            <input type="submit" value="calcular" />
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="funcao9">
+        <form action="php/sin.php" method="get">
+          <fieldset>
+            <legend><b>Função Sin</b></legend>
+            <p>
+            Retorna uma aproximação de pi. 
+            </p>
+            <label>Informe um angulo</label>
+            <br /><br />
+            <input type="number" name="angulosin" id="valorsin" />
+            <br /><br />
+            <input type="submit" value="calcular" />
+          </fieldset>
+        </form>
+      </div>
+
       <p><a href="php/funcao9.php">Sin</a></p>
       <p><a href="php/funcao10.php">Cos</a></p>
       <p><a href="php/funcao11.php">Tan</a></p>

@@ -5,16 +5,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-widht, initia-sacale=1.0">
-    <title>Mínima</title>
+    <title>Pow</title>
 </head>
 <body>
      <?php
-     $valor1 = $_GET['min1'];
-     $valor2 = $_GET['min2'];
-     $valor3 = $_GET['min3'];
+     $base = $_GET['basepow'];
+     $expoente = $_GET['expoentepow'];
 
-     $minimo = min($valor1, $valor2, $valor3);
-     echo "O valor mínimo é: $minimo <br>";
+     $resultado = pow($base, $expoente);
+     echo "$base elevado à potência $expoente é igual a $resultado<br>";
      ?>
 </body>
    </html> 

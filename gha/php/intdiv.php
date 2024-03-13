@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-widht, initia-sacale=1.0">
-    <title>variavel</title>
+    <title>IntDiv</title>
 </head>
 <body>
      <?php

@@ -5,16 +5,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-widht, initia-sacale=1.0">
-    <title>Mínima</title>
+    <title>Máxima</title>
 </head>
 <body>
      <?php
-     $valor1 = $_GET['min1'];
-     $valor2 = $_GET['min2'];
-     $valor3 = $_GET['min3'];
+     $valor1 = $_GET['max1'];
+     $valor2 = $_GET['max2'];
+     $valor3 = $_GET['max3'];
 
-     $minimo = min($valor1, $valor2, $valor3);
-     echo "O valor mínimo é: $minimo <br>";
+     $maximo = max($valor1, $valor2, $valor3);
+     echo "O valor máximo é: $maximo <br>";
      ?>
 </body>
    </html> 
